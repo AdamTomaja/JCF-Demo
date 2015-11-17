@@ -14,11 +14,15 @@ public class Alhorithms {
 	private static final List<Integer> numbers = Arrays.asList(23, 54, 12, 23, 6, 12 , 0 , 123, -212, 400, 100, 2000, 32);
 	
 	public static void main(String[] args) {
-		title("Sorting and shuffling:");
+		title("Sorting, shuffling and binary searching:");
 			show("All items", items);
 			
 			Collections.sort(items);
 			show("Sorted   ", items);
+		
+			title("Searching");
+				show("Position of House: ", Collections.binarySearch(items, "House")); // List must be sorted!
+			newline();
 			
 			Collections.shuffle(items);
 			show("Shuffled", items);
@@ -26,6 +30,7 @@ public class Alhorithms {
 			Collections.shuffle(items);
 			show("Shuffled", items);
 		newline();
+		
 		
 		title("Frequency:");
 			showFrequency(items, "Notebook");
