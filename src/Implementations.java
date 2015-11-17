@@ -24,7 +24,10 @@ import java.util.concurrent.LinkedTransferQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.SynchronousQueue;
 
-public class CollectionsFrameworkDemo {
+/**
+ * @author Adam Tomaja
+ */
+public class Implementations {
 
 	private static final String INTERFACE_SIGN = "-> ";
 	private static final String LINE = "==============================";
