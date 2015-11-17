@@ -1,3 +1,6 @@
+package pl.tomaja;
+import static pl.tomaja.UIHelper.*;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -55,19 +58,7 @@ public class Alhorithms {
 		newline();
 	}
 	
-	private static void title(String title) {
-		System.out.println(String.format("======= %s =======", title));
-	}
-
-	private static void newline() {
-		System.out.println();
-	}
-
 	private static void showFrequency(Collection<String> collection, Object object) {
 		System.out.println(String.format("Frequency of: %s = %d", object, Collections.frequency(collection, object)));
-	}
-
-	private static void show(String title, Object object) {
-		System.out.println(String.format("%s:\t %s", title, object));
 	}
 }
